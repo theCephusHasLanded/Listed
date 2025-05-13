@@ -114,7 +114,7 @@ const NotificationsPanel: React.FC = () => {
                   </div>
                 ) : notifications.length > 0 ? (
                   <ul className="space-y-4">
-                    {notifications.map(notification => (
+                    {notifications.map((notification: Notification) => (
                       <li 
                         key={notification.id} 
                         className={`${darkMode ? 'bg-gray-700' : 'bg-gray-50'} ${!notification.read ? `${darkMode ? 'border-l-4 border-indigo-500' : 'border-l-4 border-indigo-500'}` : ''} rounded-md p-4`}

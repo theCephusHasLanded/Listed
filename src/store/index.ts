@@ -4,6 +4,7 @@ import pinsReducer from './slices/pinsSlice';
 import boardsReducer from './slices/boardsSlice';
 import uiReducer from './slices/uiSlice';
 import profileReducer from './slices/profileSlice';
+import notificationsReducer from './slices/notificationsSlice';
 
 export const store = configureStore({
   reducer: {
@@ -12,6 +13,7 @@ export const store = configureStore({
     boards: boardsReducer,
     ui: uiReducer,
     profile: profileReducer,
+    notifications: notificationsReducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
