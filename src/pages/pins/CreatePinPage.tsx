@@ -138,11 +138,14 @@ const CreatePinPage: React.FC = () => {
       link,
       ownerId: user.uid,
       ownerName: user.displayName || 'User',
-      ownerPhoto: user.photoURL,
+      ownerPhoto: user.photoURL || undefined,
       createdAt: Date.now(),
     };
-    
-    const result = await dispatch(createPin({ pinData, imageFile }));
+
+    const result = await dispatch(createPin({
+      pinData: pinData as any,
+      imageFile
+    }));
     
     if (createPin.fulfilled.match(result)) {
       navigate(`/pin/${result.payload.id}`);

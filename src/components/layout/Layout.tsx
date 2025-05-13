@@ -4,20 +4,10 @@ import { useSelector } from 'react-redux';
 import { RootState } from '../../store';
 import Header from './Header';
 import Footer from './Footer';
-import CreatePinModal from '../pins/CreatePinModal';
-import CreateBoardModal from '../boards/CreateBoardModal';
-import NotificationsPanel from '../common/NotificationsPanel';
-import ConfirmationModal from '../common/ConfirmationModal';
 
 const Layout: React.FC = () => {
-  const { darkMode } = useSelector((state: RootState) => state.ui);
-  const { 
-    isCreatePinModalOpen, 
-    isCreateBoardModalOpen, 
-    isNotificationsOpen,
-    isConfirmationModalOpen,
-  } = useSelector((state: RootState) => state.ui);
-  
+  const darkMode = useSelector((state: RootState) => state.ui.darkMode);
+
   // Apply dark mode class to html element
   useEffect(() => {
     if (darkMode) {
@@ -36,12 +26,7 @@ const Layout: React.FC = () => {
       </main>
       
       <Footer />
-      
-      {/* Modals */}
-      {isCreatePinModalOpen && <CreatePinModal />}
-      {isCreateBoardModalOpen && <CreateBoardModal />}
-      {isNotificationsOpen && <NotificationsPanel />}
-      {isConfirmationModalOpen && <ConfirmationModal />}
+      {/* Modals will be added here when implemented */}
     </div>
   );
 };

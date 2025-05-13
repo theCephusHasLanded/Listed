@@ -114,7 +114,7 @@ export const fetchPinById = createAsyncThunk(
           viewCount: increment(1)
         });
         
-        return { id: pinDoc.id, ...pinData };
+        return { ...pinData, id: pinDoc.id };
       } else {
         return rejectWithValue('Pin not found');
       }

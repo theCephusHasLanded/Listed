@@ -52,6 +52,8 @@ const App: React.FC = () => {
             email: firebaseUser.email,
             displayName: firebaseUser.displayName,
             photoURL: firebaseUser.photoURL,
+            createdAt: Date.now(),
+            lastActive: Date.now(),
             ...userDoc.data(),
           }));
         } else {

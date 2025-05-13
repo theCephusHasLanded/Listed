@@ -112,7 +112,7 @@ const ProfileEditModal: React.FC = () => {
     await dispatch(updateUserProfile({
       userId: user.uid,
       profileData,
-      profileImage
+      profileImage: profileImage || undefined
     }));
     
     handleClose();

@@ -96,7 +96,7 @@ export const fetchBoardById = createAsyncThunk(
         });
         
         return {
-          board: { id: boardDoc.id, ...boardData },
+          board: { ...boardData, id: boardDoc.id },
           pins,
         };
       } else {
