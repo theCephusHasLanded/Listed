@@ -27,7 +27,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
-    "deploy": "firebase deploy"
+    "deploy": "firebase deploy",
+    "deploy:secure": "chmod +x ./scripts/secure-deploy.sh && ./scripts/secure-deploy.sh"
   },
   "eslintConfig": {
     "extends": [
