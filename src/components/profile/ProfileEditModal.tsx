@@ -17,6 +17,7 @@ import { useDropzone } from 'react-dropzone';
 import { toggleEditProfileModal } from '../../store/slices/uiSlice';
 import { updateUserProfile } from '../../store/slices/profileSlice';
 import { RootState, AppDispatch } from '../../store';
+import { updateProfile } from 'firebase/auth';
 
 const ProfileEditModal: React.FC = () => {
   const { isEditProfileModalOpen, darkMode } = useSelector((state: RootState) => state.ui);

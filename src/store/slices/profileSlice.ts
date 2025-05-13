@@ -1,17 +1,19 @@
 import { createSlice, PayloadAction, createAsyncThunk } from '@reduxjs/toolkit';
-import { 
-  doc, 
-  getDoc, 
-  updateDoc, 
-  collection, 
-  query, 
-  where, 
-  getDocs, 
+import {
+  doc,
+  getDoc,
+  updateDoc,
+  collection,
+  query,
+  where,
+  getDocs,
   increment,
   Timestamp,
   setDoc,
-  deleteDoc
+  deleteDoc,
+  addDoc
 } from 'firebase/firestore';
+import { updateProfile } from 'firebase/auth';
 import { db, auth, storage } from '../../config/firebase';
 import { ref, uploadBytes, getDownloadURL, deleteObject } from 'firebase/storage';
 import { User } from '../../types';
