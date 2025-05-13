@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "lkhn-listed"
-  }
+  },
+  "targets": {
+    "lkhn-listed": {
+      "hosting": {
+        "listed": [
+          "lkhn-listed"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

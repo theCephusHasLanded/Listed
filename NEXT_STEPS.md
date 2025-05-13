@@ -72,6 +72,8 @@ Before deploying to production:
    - Review Firebase security rules
    - Conduct security audit of authentication flows
    - Ensure proper data validation
+   - Verify Firebase API keys are accessible in production environment
+   - Test Firebase authentication in production environment
 
 3. **Documentation**
    - Update user documentation for new features
@@ -82,5 +84,10 @@ Before deploying to production:
    - Set up error tracking with Sentry or similar
    - Configure performance monitoring
    - Set up alerts for critical issues
+
+5. **Firebase Configuration**
+   - Ensure Firebase configuration has fallback values
+   - Check analytics initialization for browser compatibility
+   - Test Firebase Authentication with different auth providers
 
 The next deployment will focus on making Listed a fully functional platform with real-time capabilities, enhancing the overall user experience while maintaining performance and security.
