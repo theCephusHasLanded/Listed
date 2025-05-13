@@ -2,6 +2,22 @@
 
 Listed is a Pinterest-inspired platform designed to connect professionals affected by layoffs, helping them showcase their skills, build networks, and find new opportunities. The platform allows users to create profile pins, organize talent into boards, and connect with other professionals.
 
+## Environment Setup
+
+Create a `.env` file in the root directory with the following Firebase configuration:
+
+```
+REACT_APP_FIREBASE_API_KEY=your-api-key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your-project-id.firebaseapp.com
+REACT_APP_FIREBASE_PROJECT_ID=your-project-id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your-project-id.appspot.com
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
+REACT_APP_FIREBASE_APP_ID=your-app-id
+REACT_APP_FIREBASE_MEASUREMENT_ID=your-measurement-id
+```
+
+> Note: Never commit the `.env` file to version control as it contains sensitive information. The `.env` file is included in the .gitignore file.
+
 ## Features
 
 - **User Authentication**: Secure login and registration with Firebase Authentication
