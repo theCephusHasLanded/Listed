@@ -2,6 +2,15 @@
 
 Listed is a Pinterest-inspired professional networking platform designed to help those affected by layoffs. The application allows users to showcase their skills, connect with other professionals, and organize talented individuals into boards for networking and potential opportunities.
 
+## Demo Mode
+
+A special demo mode has been added to showcase the UI and functionality:
+
+- Access the demo at: http://localhost:3001/demo
+- The demo showcases the talent discovery UI that's central to the platform
+- Toggle between the demo interface and the main application
+- The demo uses mock data to illustrate the core user experience
+
 ## Core Features Implemented
 
 1. **Complete Firebase Integration**

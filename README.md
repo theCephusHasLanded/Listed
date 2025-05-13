@@ -28,6 +28,7 @@ REACT_APP_FIREBASE_MEASUREMENT_ID=your-measurement-id
 - **Booking System**: Request services from professionals through an integrated booking system
 - **Dark/Light Mode**: Toggle between dark and light themes for comfortable viewing
 - **Responsive Design**: Fully responsive across desktop, tablet, and mobile devices
+- **Demo Mode**: A special mode to showcase the platform's UX with mock data (/demo route)
 
 ## Tech Stack
 

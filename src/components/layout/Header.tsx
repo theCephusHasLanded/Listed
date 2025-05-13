@@ -135,6 +135,19 @@ const Header: React.FC = () => {
             >
               Explore
             </Link>
+
+            <Link
+              to="/demo"
+              className={`px-3 py-2 rounded-md ${
+                location.pathname === '/demo'
+                  ? 'font-medium text-indigo-600'
+                  : darkMode
+                  ? 'text-gray-200 hover:text-white'
+                  : 'text-gray-700 hover:text-gray-900'
+              }`}
+            >
+              Demo
+            </Link>
             
             {user && (
               <>
@@ -335,6 +348,19 @@ const Header: React.FC = () => {
               }`}
             >
               Explore
+            </Link>
+
+            <Link
+              to="/demo"
+              className={`block px-4 py-2 rounded-md ${
+                location.pathname === '/demo'
+                  ? 'font-medium bg-indigo-100 text-indigo-700 dark:bg-indigo-900 dark:text-indigo-300'
+                  : darkMode
+                  ? 'text-gray-200 hover:bg-gray-700'
+                  : 'text-gray-700 hover:bg-gray-100'
+              }`}
+            >
+              Demo
             </Link>
             
             {user && (

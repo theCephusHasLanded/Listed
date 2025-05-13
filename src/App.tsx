@@ -20,6 +20,7 @@ import SearchPage from './pages/SearchPage';
 import NotFoundPage from './pages/NotFoundPage';
 import SettingsPage from './pages/profile/SettingsPage';
 import BookingsPage from './pages/profile/BookingsPage';
+import DemoPage from './pages/DemoPage';
 
 // Components
 import Layout from './components/layout/Layout';
@@ -93,7 +94,8 @@ const App: React.FC = () => {
           <Route path="register" element={user ? <Navigate to="/" /> : <RegisterPage />} />
           <Route path="pin/:pinId" element={<PinDetailPage />} />
           <Route path="search" element={<SearchPage />} />
-          
+          <Route path="demo" element={<DemoPage />} />
+
           {/* Protected routes */}
           <Route element={<ProtectedRoute />}>
             <Route path="create-pin" element={<CreatePinPage />} />
