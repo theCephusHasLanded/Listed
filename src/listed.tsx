@@ -35,7 +35,7 @@ const Listed: React.FC = () => {
       location: "Atlanta, GA",
       availability: "Available Now",
       rating: 4.9,
-      image: "https://i.pravatar.cc/300?img=1",
+      image: "https://api.dicebear.com/7.x/avataaars/svg?seed=AishaJohnson&backgroundColor=b6e3f4,c0aede,d1d4f9&skinColor=9e5622,6f4a2f,4a2511",
       coverImage: "https://source.unsplash.com/random/300x200?design",
       verified: true,
       tags: ["design", "strategy", "leadership"],
@@ -51,7 +51,7 @@ const Listed: React.FC = () => {
       location: "Chicago, IL",
       availability: "2 weeks",
       rating: 5.0,
-      image: "https://i.pravatar.cc/300?img=2",
+      image: "https://api.dicebear.com/7.x/avataaars/svg?seed=MayaWilliams&backgroundColor=ffd5dc,ffdfbf,d1d4f9&skinColor=9e5622,6f4a2f,4a2511",
       coverImage: "https://source.unsplash.com/random/300x200?data",
       verified: true,
       tags: ["tech", "analytics", "AI"],
@@ -67,7 +67,7 @@ const Listed: React.FC = () => {
       location: "Remote",
       availability: "Available Now",
       rating: 4.8,
-      image: "https://i.pravatar.cc/300?img=3",
+      image: "https://api.dicebear.com/7.x/avataaars/svg?seed=ZaraThompson&backgroundColor=b6e3f4,c0aede,ffdfbf&skinColor=9e5622,6f4a2f,4a2511",
       coverImage: "https://source.unsplash.com/random/300x200?marketing",
       verified: true,
       tags: ["marketing", "content", "strategy"],
@@ -83,7 +83,7 @@ const Listed: React.FC = () => {
       location: "New York, NY",
       availability: "1 week",
       rating: 4.9,
-      image: "https://i.pravatar.cc/300?img=4",
+      image: "https://api.dicebear.com/7.x/avataaars/svg?seed=JasmineDavis&backgroundColor=ffd5dc,c0aede,d1d4f9&skinColor=9e5622,6f4a2f,4a2511",
       coverImage: "https://source.unsplash.com/random/300x200?coding",
       verified: true,
       tags: ["development", "tech", "consulting"],
@@ -99,7 +99,7 @@ const Listed: React.FC = () => {
       location: "Houston, TX",
       availability: "Available Now",
       rating: 5.0,
-      image: "https://i.pravatar.cc/300?img=5",
+      image: "https://api.dicebear.com/7.x/avataaars/svg?seed=NiaRoberts&backgroundColor=b6e3f4,ffdfbf,ffd5dc&skinColor=9e5622,6f4a2f,4a2511",
       coverImage: "https://source.unsplash.com/random/300x200?finance",
       verified: true,
       tags: ["finance", "strategy", "consulting"],
@@ -115,7 +115,7 @@ const Listed: React.FC = () => {
       location: "Los Angeles, CA",
       availability: "3 weeks",
       rating: 4.9,
-      image: "https://i.pravatar.cc/300?img=6",
+      image: "https://api.dicebear.com/7.x/avataaars/svg?seed=KamalaBrown&backgroundColor=c0aede,ffd5dc,ffdfbf&skinColor=9e5622,6f4a2f,4a2511",
       coverImage: "https://source.unsplash.com/random/300x200?leadership",
       verified: true,
       tags: ["leadership", "coaching", "strategy"],
@@ -230,7 +230,7 @@ const Listed: React.FC = () => {
                   <img
                     src={talent.image}
                     alt={talent.name}
-                    className="w-24 h-24 rounded-full border-4 border-white object-cover"
+                    className="w-24 h-24 rounded-full border-4 border-white object-contain bg-white"
                   />
                 </div>
 
@@ -317,7 +317,7 @@ const Listed: React.FC = () => {
                 <img
                   src={selectedTalent.image}
                   alt={selectedTalent.name}
-                  className="w-32 h-32 rounded-full object-cover"
+                  className="w-32 h-32 rounded-full object-contain bg-gray-100"
                 />
                 <div className="flex-1">
                   <h3 className="text-2xl font-semibold">{selectedTalent.name}</h3>
