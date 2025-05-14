@@ -8,10 +8,17 @@ Firebase API keys and configuration should **never** be hardcoded in your source
 
 ## Recommended Approach
 
-### 1. Environment Variables
+### 1. Runtime Environment Configuration
 
-Store all Firebase configuration in environment variables:
+We use a runtime configuration approach to protect sensitive keys:
 
+1. Environment variables are stored in `.env` file (in `.gitignore`)
+2. A script (`scripts/generate-env-config.js`) generates a runtime configuration file
+3. This file is loaded at runtime by the browser via a script tag in index.html
+4. The Firebase configuration is accessed through `window.ENV` object
+5. This approach ensures API keys are never committed to source control
+
+Example `.env` file format:
 ```
 REACT_APP_FIREBASE_API_KEY=your-api-key
 REACT_APP_FIREBASE_AUTH_DOMAIN=your-project-id.firebaseapp.com

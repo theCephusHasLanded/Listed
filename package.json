@@ -21,14 +21,15 @@
     "tailwindcss": "^3.3.2"
   },
   "scripts": {
-    "start": "PORT=3001 react-scripts start",
-    "build": "CI=false react-scripts build",
-    "build:ci": "react-scripts build",
+    "start": "node scripts/generate-env-config.js && PORT=3001 react-scripts start",
+    "build": "node scripts/generate-env-config.js && CI=false react-scripts build",
+    "build:ci": "node scripts/generate-env-config.js && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
     "deploy": "firebase deploy",
-    "deploy:secure": "chmod +x ./scripts/secure-deploy.sh && ./scripts/secure-deploy.sh"
+    "deploy:secure": "chmod +x ./scripts/secure-deploy.sh && ./scripts/secure-deploy.sh",
+    "generate:config": "node scripts/generate-env-config.js"
   },
   "eslintConfig": {
     "extends": [

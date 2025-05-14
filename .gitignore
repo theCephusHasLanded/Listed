@@ -15,6 +15,7 @@
 .env.development.local
 .env.test.local
 .env.production.local
+public/env-config.js
 
 # Firebase
 .firebase/
