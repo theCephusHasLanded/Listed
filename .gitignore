@@ -16,6 +16,7 @@
 .env.test.local
 .env.production.local
 public/env-config.js
+!public/env-config.js.template
 
 # Firebase
 .firebase/

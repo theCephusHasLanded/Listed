@@ -23,12 +23,13 @@
   "scripts": {
     "start": "node scripts/generate-env-config.js && PORT=3001 react-scripts start",
     "build": "node scripts/generate-env-config.js && CI=false react-scripts build",
-    "build:ci": "node scripts/generate-env-config.js && react-scripts build",
+    "build:ci": "CI=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
     "deploy": "firebase deploy",
     "deploy:secure": "chmod +x ./scripts/secure-deploy.sh && ./scripts/secure-deploy.sh",
+    "deploy:ci": "chmod +x ./deploy-ci.sh && ./deploy-ci.sh",
     "generate:config": "node scripts/generate-env-config.js"
   },
   "eslintConfig": {
